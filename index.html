@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI for Security and Security for AI — Companion Site</title>
+  <meta name="description" content="Companion materials, datasets, notebooks, and practitioner labs for AI for Security and Security for AI.">
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --ink: #1f2933;
+      --muted: #5f6c7b;
+      --card: #ffffff;
+      --line: #d9dee5;
+      --accent: #174ea6;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 3rem 1rem 2.5rem;
+    }
+    header .wrap, main, footer .wrap { max-width: 980px; margin: 0 auto; }
+    h1 { font-size: clamp(2rem, 4vw, 3.2rem); margin: 0 0 0.5rem; line-height: 1.1; }
+    h2 { margin-top: 2.2rem; border-bottom: 1px solid var(--line); padding-bottom: 0.25rem; }
+    h3 { margin-bottom: 0.25rem; }
+    .subtitle { color: #d1d5db; max-width: 760px; font-size: 1.1rem; }
+    main { padding: 2rem 1rem 3rem; }
+    .notice {
+      background: #eef4ff;
+      border: 1px solid #bfd3ff;
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      margin: 1.2rem 0;
+    }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: #eef0f3;
+      padding: 0.1rem 0.25rem;
+      border-radius: 4px;
+    }
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.55rem 0.85rem;
+      border-radius: 8px;
+      margin: 0.25rem 0.3rem 0.25rem 0;
+      font-weight: 600;
+    }
+    .button:hover { text-decoration: none; background: #0f3e87; }
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      padding: 1.5rem 1rem;
+      background: white;
+    }
+    .small { color: var(--muted); font-size: 0.95rem; }
+    ul { padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>AI for Security and Security for AI</h1>
+    <p class="subtitle">Companion materials for the book: practitioner labs, notebooks, datasets, errata, and supplementary readings.</p>
+  </div>
+</header>
+
+<main>
+  <section class="notice">
+    <strong>Book link placeholder:</strong>
+    Use a stable URL in the printed book, for example
+    <code>https://YOUR-USERNAME.github.io/ai-security-book/</code>
+    or a custom domain such as <code>https://ai-security-book.org/</code>.
+  </section>
+
+  <section>
+    <h2>Companion notebooks</h2>
+    <p>These notebooks are designed to support the practitioner-facing labs in the Deep Learning, Few-Shot Learning, and Lifelong Learning chapters.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Deep Learning</h3>
+        <p>Job-scam detection, score interpretation, validation-based threshold tuning, PR-AUC, and confusion matrices.</p>
+        <a class="button" href="notebooks/01_deep_learning_jobscams_threshold_tuning.ipynb">Download notebook</a>
+      </div>
+      <div class="card">
+        <h3>Few-Shot Learning</h3>
+        <p>Prototype-based triage using a small support set, plus a support-set noise experiment.</p>
+        <a class="button" href="notebooks/02_fewshot_jobscams_prototype_triage.ipynb">Download notebook</a>
+      </div>
+      <div class="card">
+        <h3>Lifelong Learning</h3>
+        <p>Domain-incremental deception detection, catastrophic forgetting, and class-balanced replay.</p>
+        <a class="button" href="notebooks/03_lifelong_difraud_domain_stream_replay.ipynb">Download notebook</a>
+      </div>
+      <div class="card">
+        <h3>Optional URL Lab</h3>
+        <p>PhiUSIIL phishing URL classification using a single labeled URL dataset, avoiding URL/domain mismatch.</p>
+        <a class="button" href="notebooks/04_optional_url_phiusiil_thresholding.ipynb">Download notebook</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Datasets</h2>
+    <ul>
+      <li><strong>DiFrauD</strong>: deception and fraud domains used for job-scam, few-shot, and lifelong-learning labs.</li>
+      <li><strong>PhiUSIIL Phishing URL Dataset</strong>: optional URL-based phishing-detection lab using one unified labeled URL dataset.</li>
+    </ul>
+    <p class="small">Safety note: URL labs should use only dataset-provided strings or features. Do not visit, crawl, or render suspicious URLs.</p>
+  </section>
+
+  <section>
+    <h2>Using the notebooks</h2>
+    <ol>
+      <li>Download the notebook.</li>
+      <li>Open it in Jupyter, VS Code, or Google Colab.</li>
+      <li>Run the cells in order. Some notebooks download public datasets at runtime.</li>
+      <li>Record the metrics and answer the practitioner questions at the end of each lab.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Errata and updates</h2>
+    <p>Errata, corrected code, and additional practitioner examples will be posted here as the book evolves.</p>
+  </section>
+
+  <section>
+    <h2>Citation</h2>
+    <p>When citing the companion materials, cite the book and the specific notebook or release version. A DOI can be added here after archiving a release on Zenodo.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© Rakesh Verma. Companion site for <em>AI for Security and Security for AI</em>.</p>
+  </div>
+</footer>
+</body>
+</html>

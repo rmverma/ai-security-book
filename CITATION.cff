@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "AI for Security and Security for AI: Companion Materials"
+message: "If you use these materials, please cite the book and this companion site."
+type: software
+authors:
+  - family-names: Verma
+    given-names: Rakesh
+repository-code: "https://github.com/YOUR-USERNAME/ai-security-book"
+url: "https://YOUR-USERNAME.github.io/ai-security-book/"
+license: MIT
